@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            window.onerror = function(msg, url, line){
+                alert(msg);
+                alert(url);
+                alert(line);
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the following to see the result</p>
+        <form>
+            <input type="button" onclick="myFunc()" value="Click Me" />
+            <button onclick="myFunc()" >Click Me</button>
+        </form>
+    </body>
+</html>

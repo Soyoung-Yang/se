@@ -1,0 +1,13 @@
+div.london{
+    background-color: gray;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+
+div.seoul{
+    background-color: azure;
+    color: green;
+    margin: 15px 0 15px 0;
+    padding: 50px;
+}
