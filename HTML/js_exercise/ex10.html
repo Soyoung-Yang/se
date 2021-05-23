@@ -1,0 +1,20 @@
+<html>
+    <p>The toString() method can output numbers as base 16(hex), base 8(octal), or base 2(binary).</p>
+
+    <p id="demo"></p>
+    <button onclick="myFunction()">Try it</button>
+
+<!--innerHTML : 특정 html 태그 안에 들어갈 html의 값 
+    - document.getElementById()함수를 이용해서 원하는 html태그에 구조적으로 접근하여 html 태그를 삽입 또는 추출할 수 있다.
+    - 'Try it'을 누르면 id="demo"인 <p>태그 안에 innerHTML 내용이 들어가 나타나게 된다. -->
+    <script>
+        function myFunction(){
+            var myNumber = 128;
+            document.getElementById("demo").innerHTML = "128="+
+            myNumber+"Decimal, "+
+            myNumber.toString(16)+"Hexadecimal, "+
+            myNumber.toString(8)+"Octal, "+
+            myNumber.toString(2)+"Binary.";
+        }
+    </script>
+</html>

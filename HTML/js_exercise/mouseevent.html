@@ -1,0 +1,21 @@
+<body>
+  <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    //마우스 오버되면 mOver함수를, 마우스가 div를 벗어나면 mOut을 실행
+    style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+    First Display..
+ 
+  </div>
+</body>
+ 
+<script>
+  function mOver(obj){
+    obj.innerHTML = "Thank U";
+    //div의 텍스트를 수정
+  }
+  function mOut(obj){
+    obj.innerHTML = "Mouse Over Me."
+    //div의 텍스트를 수정
+  }
+</script>
+
+<!-- 출처 : https://codingmoonkwa.tistory.com/13 -->

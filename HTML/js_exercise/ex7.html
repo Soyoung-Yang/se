@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function over(obj){
+                obj.innerHTML = "Mouse Over";
+            }
+            function out(obj){
+                obj.innerHTML = "Mouse Out";
+            }
+        </script>
+    </head>
+    <body>
+        <p>Bring your mouse inside the division to see the result</p>
+
+        <div onmouseover="over(this)" onmouseout="out(this)">
+            <h2>This is inside the division</h2>
+        </div>
+    </body>
+</html>
+
+<!-- 출처 : https://codingmoonkwa.tistory.com/13 -->
