@@ -3,7 +3,7 @@ from flask import Flask, request, render_template, session, url_for, redirect
 app = Flask(__name__)
 app.secret_key = 'super secret key'
 app.config['SESSION_TYPE'] = 'filesystem'
-userinfo = {'Soy': 'seproject^^'}
+userinfo = {'Soy': 'seproject^3^'}
 board = []
  
 @app.route("/")
