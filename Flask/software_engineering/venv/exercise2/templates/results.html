@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+2016112220 양소영<br><br>
+    <body>
+        <table border = 1>
+            {% for key, value in result.items() %}
+                <tr>
+                    <th> {{ key }} </th> 
+                    <!-- th : table head 테이블 헤더 태그(헤더 셀) -->
+                    <td> {{ value }} </td>
+                    <!-- td : table data 새로운 열 시작 -->
+                </tr>
+                <!-- tr : table row 새로운 행 시작 -->
+            {% endfor %}
+        </table>
+    </body>
+</html>

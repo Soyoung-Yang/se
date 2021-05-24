@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table border="1">
+            <th>이름</th>
+            <th>점수</th>
+            {% for key, value in result.items() %}
+                <tr>
+                    <th> {{ key }} </th>
+                    <td> {{ value }} </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
+
+
+{#<table> : 테이블을 만드는 태그#}
+{#<th> : 테이블의 헤더부분을 만드는 태그#}
+{#<tr> : 테이블의 행을 만드는 태그#}
+{#<td> : 테이블의 열을 만드는 태그 #}

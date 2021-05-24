@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" />
+        </form>
+    </body>
+</html>
+
+<!-- 
+--upload.html
+파일을 선택한 후 submit을 클릭한다. 양식의 POST 메소드는 '/uploader' URL을 호출한다. 
+--python script
+함수 upload_file()는 저장 작업을 수행한다.
+ -->
