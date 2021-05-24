@@ -89,6 +89,3 @@ def delete(uid):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-# 출처 : https://youngminieo1005.tistory.com/91?category=453139
