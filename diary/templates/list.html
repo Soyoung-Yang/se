@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Upload page</title>
+ 
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        table {
+            width:700px; 
+            table-layout: fixed;
+        }
+        div {
+            width: 100%;
+            height: 500px;
+          }
+        div.left {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+          }
+        div.right {
+            width: 50%;
+            float: right;
+            box-sizing: border-box;
+          }
+        .logout {
+            text-align: left;
+          }
+        .button2 {
+            width:100px;
+            background-color: #f8585b;
+            border: none;
+            color:#fff;
+            padding: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            cursor: pointer;
+            border-radius:10px;
+        
+        }
+        .button2:hover {
+            background-color:black;
+        }
+        .button {
+            width:150px;
+            background-color: #f8585b;
+            border: none;
+            color:#fff;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            cursor: pointer;
+            border-radius:10px;
+        
+        }
+        .button:hover {
+            background-color:black;
+        }
+        .button3 {
+            width:50px;
+            background-color: #f8585b;
+            border: none;
+            color:#fff;
+            padding: 3px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            cursor: pointer;
+            border-radius:10px;
+        
+        }
+        .button3:hover {
+            background-color:black;
+        }
+    </style>
+</head>
+
+<form class="logout" action = "" method="post">
+    <a class="button2" href= "/logout">Sign Out</a>
+</form>
+
+<body>
+    <h1>Personal Diary</h1>
+    
+    <div class="left">
+        <h4>Add</h4>
+        <form action="/add" method="POST">
+            Title<br>
+            <input type="text" name="name" style="width:500px; height:30px"/><br>
+            Context<br>
+            <textarea name="context" cols="100" rows="20"></textarea><br><br>
+            <input class="button" type="submit" value="Upload" /><br>
+        </form>
+    </div>
+    <div class="right">
+        <h4>List</h4>
+        <table border=1 align="center">
+            <thead>
+                <td style="width:100px">Index</td>
+                <td style="width:250px;">Title</td>
+                <td>Context</td>
+                <td>Edit, Delete</td>
+            </thead>
+            {% for row in rows %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ row[0] }}</td>
+                <td nowrap style="overflow:hidden">{{ row[1] }}</td>
+                <td><a class="button3" href="{{url_for('update', uid = loop.index)}}">Edit</a> 
+                    <a class="button3" href="{{url_for('delete', uid = loop.index)}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+</body>
+ 
+</html>
