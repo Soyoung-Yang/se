@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+ 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Generator" content="EditPlus®">
+        <meta name="Author" content="">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        <title>Upload page</title>
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    </head>
+
+    <form class="logout" action = "" method="post">
+        <a class="button2" href= "/logout">Sign Out</a>
+    </form>
+
+    <body>
+        <h1>Personal Diary</h1>
+        
+        <div class="left">
+            <h4>Add</h4>
+            <form action="/add" method="POST">
+                Title<br>
+                <input type="text" name="name" style="width:500px; height:30px"/><br>
+                Context<br>
+                <textarea name="context" cols="100" rows="20"></textarea><br><br>
+                <input class="button" type="submit" value="Upload" /><br>
+            </form>
+            <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+                <label for="file">Choose file to upload</label>
+                <input type="file" id="file" name="file" multiple />
+                <input class="button3" type="submit" value="submit"/>
+            </form>
+        </div>
+        
+        <div class="right">
+            <h4>List</h4>
+            <table border=1 align="center">
+                <thead>
+                    <td style="width:100px">Index</td>
+                    <td style="width:250px;">Title</td>
+                    <td>Context</td>
+                    <td>Edit</td>
+                </thead>
+                {% for row in rows %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ row[0] }}</a></td>
+                    <td nowrap style="overflow:hidden">{{ row[1] }}</td>
+                    <td>
+                        <a class="button3" href="{{url_for('update', uid = loop.index)}}">View</a> 
+                        <a class="button3" href="{{url_for('delete', uid = loop.index)}}">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        
+    </body>
+ 
+</html>
