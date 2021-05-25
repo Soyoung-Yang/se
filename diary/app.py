@@ -1,9 +1,11 @@
 from flask import Flask, request, render_template, session, url_for, redirect
+from werkzeug.utils import secure_filename
+import os
 
 app = Flask(__name__)
 app.secret_key = 'super secret key'
 app.config['SESSION_TYPE'] = 'filesystem'
-userinfo = {'Elice': '1q2w3e4r!!'}
+userinfo = {'Soy': 'seproject^3^'}
 board = []
  
 @app.route("/")
@@ -84,8 +86,18 @@ def update(uid):
 def delete(uid):
     index2 = uid - 1
     del board[index2]
- 
     return redirect(url_for("index2"))
+
+@app.route('/uploader', methods=['GET','POST'])
+def upload_file():
+    if request.method == 'POST':
+        f = request.files['file']
+        if not os.path.exists("./static"):
+            os.makedirs('./static')
+        f.save('./static/' + secure_filename(f.filename))
+        return redirect(url_for("index2"))
+    else:
+        return render_template("list.html", rows=board)
 
 if __name__ == '__main__':
     app.run(debug=True)
