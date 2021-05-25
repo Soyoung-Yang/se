@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+2016112220 양소영<br><br>
+    <body>
+        <table border=1>
+            <th>과목</th>
+            <th>점수</th>
+            {% for key, value in scores.items() %}
+                <tr>
+                    <th> {{ key }} </th>
+                    <td> {{ value }} </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
