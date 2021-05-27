@@ -87,6 +87,9 @@
             .button3:hover {
                 background-color:black;
             }
+            #context{
+                text-align: left; vertical-align: top; padding-left: 10px;
+            }
         </style>
     </head>
  
@@ -120,7 +123,7 @@
                     <td>{{ rows[index2-1][0] }}</td>   
                 </tr>
                 <tr><td colspan="2">Context</td></tr>
-                <tr><td colspan="2">{{ rows[index2-1][1] }}</td></tr>
+                <tr><td id="context" colspan="2" height="200">{{ rows[index2-1][1] }}</td></tr>
                 <tr><td colspan="2"><img src="{{url_for('static', filename='file')}}" alt="file"></td></tr>
             </table>
         </div>
