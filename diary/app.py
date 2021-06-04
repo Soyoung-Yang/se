@@ -88,6 +88,7 @@ def delete(uid):
     del board[index2]
     return redirect(url_for("index2"))
 
+# file upload
 @app.route('/uploader', methods=['GET','POST'])
 def upload_file():
     if request.method == 'POST':
