@@ -16,6 +16,14 @@ software engineering final project - Personal Diary web site
 
 # Screenshot
 ![Initial page - Chrome 2021-06-04 오전 11_52_01](https://user-images.githubusercontent.com/74034366/120739195-1961ba00-c52c-11eb-8f37-3641ad1efb06.png)
+![Initial page - Chrome 2021-06-04 오전 11_52_14](https://user-images.githubusercontent.com/74034366/120739797-f97ec600-c52c-11eb-8131-4179c2cbd451.png)
+![Initial page - Chrome 2021-06-04 오전 11_52_27](https://user-images.githubusercontent.com/74034366/120739809-fdaae380-c52c-11eb-9d00-fd56eedd1b10.png)
+![Initial page - Chrome 2021-06-04 오전 11_54_35](https://user-images.githubusercontent.com/74034366/120739818-000d3d80-c52d-11eb-88c9-b58b21b8572b.png)
+![Initial page - Chrome 2021-06-04 오전 11_54_45](https://user-images.githubusercontent.com/74034366/120739825-01d70100-c52d-11eb-9cd2-ae5e6d202b59.png)
+![Initial page - Chrome 2021-06-04 오전 11_54_55](https://user-images.githubusercontent.com/74034366/120739828-03a0c480-c52d-11eb-8c01-5983ca1e4d0d.png)
+![Initial page - Chrome 2021-06-04 오전 11_55_20](https://user-images.githubusercontent.com/74034366/120739831-056a8800-c52d-11eb-9cac-34d66277b9b5.png)
+![Initial page - Chrome 2021-06-04 오전 11_55_27](https://user-images.githubusercontent.com/74034366/120739845-07344b80-c52d-11eb-8bad-b64bd87163c6.png)
+![Initial page - Chrome 2021-06-04 오전 11_55_35](https://user-images.githubusercontent.com/74034366/120739852-08fe0f00-c52d-11eb-81bc-1944071d146e.png)
 
 # reference
 https://youngminieo1005.tistory.com/91?category=453139
