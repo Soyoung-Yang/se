@@ -14,5 +14,5 @@ software engineering final project - Personal Diary web site
 10. (Delete) If you press 'Delete' button from the list, the diary will be deleted.
 11. (Sign out) You can log out by pressing the 'Sign Out' button in the upper left corner of the 'Upload page' or 'Edit page'.
 
-# diary
-reference : https://youngminieo1005.tistory.com/91?category=453139
+# reference
+https://youngminieo1005.tistory.com/91?category=453139
